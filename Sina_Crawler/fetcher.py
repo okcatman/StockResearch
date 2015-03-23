@@ -1,11 +1,14 @@
 # -*- encoding:utf-8 -*-
 
-import urllib2
 from threading import Thread,Lock
 from Queue import Queue
 import time
 import requests
 import re
+import sys
+from Config import Config
+from LoggingRecord import LogRec
+import traceback
 
 class Fetcher(object):
 
@@ -103,104 +106,125 @@ class Fetcher(object):
 
 
     def do_main(self,req):
-        resp = requests.get(req['target'],headers=self.headers,proxies=self.proxies)
+        try:
+            resp = requests.get(req['target'],headers=self.headers,proxies=self.proxies)
 
-        if req['type'] == 0:
-            resp.encoding = 'gbk'
-            content = resp.text
-            pageinfo = self.filt_finance_content(content)
-        elif req['type'] == 1:
-            content = resp.text
-            pageinfo = self.filt_licai_content(content)
-        elif req['type'] == 2:
-            resp.encoding = 'utf-8'
-            content = resp.text
-            pageinfo = self.filt_blog_content(content)
-        elif req['type'] == 3:
-            resp.encoding = 'gbk'
-            content = resp.text
-            pageinfo = self.filt_guba_content(content)
+            if req['type'] == 0:
+                resp.encoding = 'gbk'
+                content = resp.text
+                pageinfo = self.filt_finance_content(content)
+            elif req['type'] == 1:
+                content = resp.text
+                pageinfo = self.filt_licai_content(content)
+            elif req['type'] == 2:
+                resp.encoding = 'utf-8'
+                content = resp.text
+                pageinfo = self.filt_blog_content(content)
+            elif req['type'] == 3:
+                resp.encoding = 'gbk'
+                content = resp.text
+                pageinfo = self.filt_guba_content(content)
 
-        # return pageinfo
-        page_map = {'target':req['target'],'info':pageinfo}
+            # return pageinfo
+            page_map = {'target':req['target'],'info':pageinfo}
+
+        except:
+            info = sys.exc_info()
+            err_logger = LogRec.get_logger(Config.ERRLOGGER)
+            for file, lineno, function, text in traceback.extract_tb(info[2]):
+                err_str = file, "line:", lineno, "in", function
+                err_logger.error(err_str)
+            err_str = "** %s: %s" % info[:2]
+            err_logger.error(err_str)
+
         return page_map
-
 
 
 
     # 过滤文章内容
     def filt_finance_content(self, content):
-        infoPattern = '''<!--wapdump end-->([\s\S]*?)<!-- publish_helper_end -->'''
-        reg = re.compile(infoPattern)
-        matches = reg.findall(content)
-        res_info = ""
-        if matches:
-            res_info = matches[0]
+        try:
+            infoPattern = '''<!--wapdump end-->([\s\S]*?)<!-- publish_helper_end -->'''
+            reg = re.compile(infoPattern)
+            matches = reg.findall(content)
+            res_info = ""
+            if matches:
+                res_info = matches[0]
 
-            for k, v in self.regex_tag.iteritems():
-                f_tmp = k.findall(res_info)
-                for item in f_tmp:
-                    res_info = res_info.replace(item, v)
+                for k, v in self.regex_tag.iteritems():
+                    f_tmp = k.findall(res_info)
+                    for item in f_tmp:
+                        res_info = res_info.replace(item, v)
 
-            for item in self.rep_tag:
-                res_info = res_info.replace(item, "")
+                for item in self.rep_tag:
+                    res_info = res_info.replace(item, "")
+        except Exception,e:
+            raise Exception(e)
 
         return res_info
 
 
     def filt_licai_content(self, content):
+        try:
+            infoPattern = '''<div class="p_article">([\s\S]*?)</div>'''
+            reg = re.compile(infoPattern)
+            matches = reg.findall(content)
+            res_info = ""
+            if matches:
+                res_info = matches[0]
 
-        infoPattern = '''<div class="p_article">([\s\S]*?)</div>'''
-        reg = re.compile(infoPattern)
-        matches = reg.findall(content)
-        res_info = ""
-        if matches:
-            res_info = matches[0]
+                for k, v in self.regex_tag.iteritems():
+                    f_tmp = k.findall(res_info)
+                    for item in f_tmp:
+                        res_info = res_info.replace(item, v)
 
-            for k, v in self.regex_tag.iteritems():
-                f_tmp = k.findall(res_info)
-                for item in f_tmp:
-                    res_info = res_info.replace(item, v)
-
-            for item in self.rep_tag:
-                res_info = res_info.replace(item, "")
+                for item in self.rep_tag:
+                    res_info = res_info.replace(item, "")
+        except Exception,e:
+            raise Exception(e)
 
         return res_info
 
     def filt_blog_content(self, content):
-        infoPattern = ur'''<!-- 正文开始 -->([\s\S]*?)<!-- 正文结束 -->'''
-        reg = re.compile(infoPattern)
-        matches = reg.findall(content)
+        try:
+            infoPattern = ur'''<!-- 正文开始 -->([\s\S]*?)<!-- 正文结束 -->'''
+            reg = re.compile(infoPattern)
+            matches = reg.findall(content)
 
-        res_info = ""
-        if matches:
-            res_info = matches[0]
+            res_info = ""
+            if matches:
+                res_info = matches[0]
 
-            for k, v in self.regex_tag.iteritems():
-                f_tmp = k.findall(res_info)
-                for item in f_tmp:
-                    res_info = res_info.replace(item, v)
+                for k, v in self.regex_tag.iteritems():
+                    f_tmp = k.findall(res_info)
+                    for item in f_tmp:
+                        res_info = res_info.replace(item, v)
 
-            for item in self.rep_tag:
-                res_info = res_info.replace(item, "")
+                for item in self.rep_tag:
+                    res_info = res_info.replace(item, "")
+        except Exception,e:
+            raise Exception(e)
 
         return res_info
 
     def filt_guba_content(self, content):
-        infoPattern = '''<div class='ilt_p'>([\s\S]*?)<div class='ilt_panel clearfix'>'''
+        try:
+            infoPattern = '''<div class='ilt_p'>([\s\S]*?)<div class='ilt_panel clearfix'>'''
 
-        reg = re.compile(infoPattern)
-        matches = reg.findall(content)
-        res_info = ""
-        if matches:
-            res_info = matches[0]
+            reg = re.compile(infoPattern)
+            matches = reg.findall(content)
+            res_info = ""
+            if matches:
+                res_info = matches[0]
 
-            for k, v in self.regex_tag.iteritems():
-                f_tmp = k.findall(res_info)
-                for item in f_tmp:
-                    res_info = res_info.replace(item, v)
+                for k, v in self.regex_tag.iteritems():
+                    f_tmp = k.findall(res_info)
+                    for item in f_tmp:
+                        res_info = res_info.replace(item, v)
 
-            for item in self.rep_tag:
-                res_info = res_info.replace(item, "")
+                for item in self.rep_tag:
+                    res_info = res_info.replace(item, "")
+        except Exception,e:
+            raise Exception(e)
 
         return res_info
