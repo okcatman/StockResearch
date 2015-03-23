@@ -20,17 +20,20 @@ class Fetcher(object):
     rep_tag = [' ', '\t', '\n', '\r', '\f', '\v', '<div', '&nbsp;', '<a', '</a>', '<A', '</A>', '<table', '<TABLE',
                '</TABLE>', '</table>', '<tr', '<td', '</tr>', '<TR', '</TR>', '<TD', '</TD>', '</td>', '<p', '<span',
                '<P', '<SPAN', '<DIV', "&", '<font', '<B', '<b', '<br', '/>', '</div>', '</DIV>', '</p>', '</span>',
-               '</SPAN>', '</font>', '</FONT>', '</B>', '</img>', '<FONT', '>', 'id=']
+               '</SPAN>','<wbr>', '</font>', '</FONT>', '</B>','</P>','</img>', '<FONT', '>', 'id=','sina_keyword_ad_area2','articalContentnewfont_family','quote_','stock_']
 
     regex_tag = {
-        re.compile(r"href=['\" ]http://.+?['\" ]"): "",
-        re.compile(r"target=['\" ].+?['\" ]"): "",
-        re.compile(r"class=['\" ].+?['\" ]"): "",
-        re.compile(r"style=['\" ].+?['\" ]"): "",
-        re.compile(r"STYLE=['\" ].+?['\" ]"): "",
+        re.compile(r"href=['\"]?http://[\s\S]*?>"): "",
+        re.compile(r"target=['\"]?[\s\S]*?['\"]?"): "",
+        re.compile(r"class=['\"]?[\s\S]*?['\"]?"): "",
+        re.compile(r"style=[\"][\s\S]*?[\"]"): "",
+        re.compile(r"STYLE=[\"][\s\S]*?[\"]"): "",
         re.compile(r"<img[\s\S]*?>"): "",
-        re.compile(r"FACE=['\" ].+?['\" ]"): "",
-        re.compile(r"src=['\" ].+?['\" ]"): "",
+        re.compile(r"FACE=['\"]?[\s\S]*?['\"]?"): "",
+        re.compile(r"src=['\"]?.+?['\"]?"): "",
+        re.compile(r"COLOR=['\"]?.+?['\"]?"): "",
+        re.compile(r"TITLE=['\"]?.+?['\"]?"): "",
+        re.compile(r"<!--news_keyword[\s\S]+"):"",
     }
 
     proxies = {
@@ -165,7 +168,7 @@ class Fetcher(object):
         return res_info
 
     def filt_blog_content(self, content):
-        infoPattern = r'''id="sina_keyword_ad_area2"([\s\S]*?)id='share'''
+        infoPattern = ur'''<!-- 正文开始 -->([\s\S]*?)<!-- 正文结束 -->'''
         reg = re.compile(infoPattern)
         matches = reg.findall(content)
 
