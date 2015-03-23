@@ -1,5 +1,6 @@
 # encoding:utf-8
-__author__ = 'Mark-Fighting'
+__author__ = 'Shudong Ma'
+
 import re
 import requests
 
