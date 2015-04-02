@@ -1,0 +1,95 @@
+Thu, 02 Apr 2015 16:38:30 ERROR ('G:\\testPython\\pyCharmPro\\ResearchPro\\StockResearch\\Sina_Crawler\\CrawlerController.py', 'line:', 72, 'in', 'get_response')
+Thu, 02 Apr 2015 16:38:30 ERROR ('G:\\testPython\\pyCharmPro\\ResearchPro\\StockResearch\\Sina_Crawler\\CrawlerController.py', 'line:', 72, 'in', 'get_response')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\api.py', 'line:', 65, 'in', 'get')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\api.py', 'line:', 65, 'in', 'get')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\api.py', 'line:', 49, 'in', 'request')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\api.py', 'line:', 49, 'in', 'request')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\sessions.py', 'line:', 461, 'in', 'request')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\sessions.py', 'line:', 461, 'in', 'request')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\sessions.py', 'line:', 573, 'in', 'send')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\sessions.py', 'line:', 573, 'in', 'send')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\adapters.py', 'line:', 424, 'in', 'send')
+Thu, 02 Apr 2015 16:38:30 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\adapters.py', 'line:', 424, 'in', 'send')
+Thu, 02 Apr 2015 16:38:30 ERROR ** <class 'requests.exceptions.ConnectionError'>: HTTPConnectionPool(host='127.0.0.1', port=8087): Max retries exceeded with url: http://finance.sina.com.cn/column/ggdp.shtml (Caused by ProxyError('Cannot connect to proxy.', error(10061, '')))
+Thu, 02 Apr 2015 16:38:30 ERROR ** <class 'requests.exceptions.ConnectionError'>: HTTPConnectionPool(host='127.0.0.1', port=8087): Max retries exceeded with url: http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index.shtml (Caused by ProxyError('Cannot connect to proxy.', error(10061, '')))
+Thu, 02 Apr 2015 19:45:17 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:45:17 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:45:17 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:57' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:45:18 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:45:18 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:45:18 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:04' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:45:18 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:45:18 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:45:18 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:18:32' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:45:19 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:45:19 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:45:19 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:40:52' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:45:19 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:45:19 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:45:19 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:22' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:48:37 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:48:37 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:48:37 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:57' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:48:38 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:48:38 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:48:38 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:22' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:48:38 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:48:38 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:48:38 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:04' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:48:39 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:48:39 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:48:39 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:46' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:48:39 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:48:39 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:48:39 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:24' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 19:48:40 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 105, 'in', '__write_to_db')
+Thu, 02 Apr 2015 19:48:40 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 19:48:40 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:12:57' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 20:37:45 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 144, 'in', '__write_to_db')
+Thu, 02 Apr 2015 20:37:45 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 20:37:45 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:04' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 20:37:45 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 144, 'in', '__write_to_db')
+Thu, 02 Apr 2015 20:37:45 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 20:37:45 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:57' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 20:37:46 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 144, 'in', '__write_to_db')
+Thu, 02 Apr 2015 20:37:46 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 20:37:46 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:24' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 20:37:46 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 144, 'in', '__write_to_db')
+Thu, 02 Apr 2015 20:37:46 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 20:37:46 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:46' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 20:37:47 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 144, 'in', '__write_to_db')
+Thu, 02 Apr 2015 20:37:47 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 20:37:47 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:22' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 20:37:47 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 144, 'in', '__write_to_db')
+Thu, 02 Apr 2015 20:37:47 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 20:37:47 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:40:52' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:37 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:37 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:37 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:04' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:37 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:37 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:37 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:57' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:38 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:38 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:38 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:24' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:38 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:38 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:38 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:40:52' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:39 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:39 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:39 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 16:55:53' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:39 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:39 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:39 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:18:32' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:40 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:40 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:40 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:12:57' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:40 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:40 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:40 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:07:16' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:41 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:41 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:41 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:16:22' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
+Thu, 02 Apr 2015 21:08:41 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 147, 'in', '__write_to_db')
+Thu, 02 Apr 2015 21:08:41 ERROR ('F:\\soft\\python27\\lib\\_strptime.py', 'line:', 325, 'in', '_strptime')
+Thu, 02 Apr 2015 21:08:41 ERROR ** <type 'exceptions.ValueError'>: time data '20152015-04-02 17:15:46' does not match format '%Y%m\xe6\x9c\x88%d\xe6\x97\xa5 %H:%M'
