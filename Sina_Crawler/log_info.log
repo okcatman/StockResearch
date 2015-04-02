@@ -60,3 +60,19 @@ Thu, 02 Apr 2015 21:08:26 CrawlerRunner.py[line:82] INFO 获取最新链接列�
 Thu, 02 Apr 2015 21:08:26 CrawlerRunner.py[line:104] INFO 准备写入数据库
 Thu, 02 Apr 2015 21:08:34 CrawlerRunner.py[line:82] INFO 获取最新链接列表,准备开始捕获文章内容
 Thu, 02 Apr 2015 21:08:34 CrawlerRunner.py[line:104] INFO 准备写入数据库
+Thu, 02 Apr 2015 22:28:58 CrawlerRunner.py[line:39] INFO 类型为0，开始下一轮检查并捕获信息
+Thu, 02 Apr 2015 22:28:58 CrawlerRunner.py[line:58] INFO 开始抓取文章链接。。。
+Thu, 02 Apr 2015 22:28:58 CrawlerRunner.py[line:82] INFO 获取最新链接列表,准备开始捕获文章内容
+Thu, 02 Apr 2015 22:28:58 CrawlerRunner.py[line:104] INFO 准备写入数据库
+Thu, 02 Apr 2015 22:30:08 CrawlerRunner.py[line:39] INFO 类型为0，开始下一轮检查并捕获信息
+Thu, 02 Apr 2015 22:30:08 CrawlerRunner.py[line:58] INFO 开始抓取文章链接。。。
+Thu, 02 Apr 2015 22:30:08 CrawlerRunner.py[line:82] INFO 获取最新链接列表,准备开始捕获文章内容
+Thu, 02 Apr 2015 22:30:08 CrawlerRunner.py[line:104] INFO 准备写入数据库
+Thu, 02 Apr 2015 22:35:00 CrawlerRunner.py[line:39] INFO 类型为0，开始下一轮检查并捕获信息
+Thu, 02 Apr 2015 22:35:00 CrawlerRunner.py[line:58] INFO 开始抓取文章链接。。。
+Thu, 02 Apr 2015 22:35:00 CrawlerRunner.py[line:82] INFO 获取最新链接列表,准备开始捕获文章内容
+Thu, 02 Apr 2015 22:35:00 CrawlerRunner.py[line:104] INFO 准备写入数据库
+Thu, 02 Apr 2015 22:35:35 CrawlerRunner.py[line:39] INFO 类型为0，开始下一轮检查并捕获信息
+Thu, 02 Apr 2015 22:35:35 CrawlerRunner.py[line:58] INFO 开始抓取文章链接。。。
+Thu, 02 Apr 2015 22:35:45 CrawlerRunner.py[line:82] INFO 获取最新链接列表,准备开始捕获文章内容
+Thu, 02 Apr 2015 22:35:45 CrawlerRunner.py[line:104] INFO 准备写入数据库

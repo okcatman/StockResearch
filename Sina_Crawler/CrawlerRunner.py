@@ -109,8 +109,6 @@ class CrawlerRuner(object):
                 self.__write_to_db(sqlUtil,res_map,category)
 
                 time.sleep(0.5)
-                #print res_map
-                #print "****************************************************"
 
             sqlUtil.destory()
 
@@ -129,7 +127,6 @@ class CrawlerRuner(object):
         if category == 0:
             self.type_0_lock.release()
         elif category == 1:
-            # print "over"
             self.type_1_lock.release()
 
 
@@ -143,12 +140,17 @@ class CrawlerRuner(object):
             data_source["title"] = info_map["title"]
             data_source["db_insert_time"] = int(time.time())
 
-            publish_time = str(datetime.date.today().year)+info_map["publish_time"]
-            data_source["publish_time"] = datetime.datetime.strptime(publish_time,'%Y%m月%d日 %H:%M')
+            if category == 1:
+                publish_time = str(datetime.date.today().year)+info_map["publish_time"]
+                data_source["publish_time"] = datetime.datetime.strptime(publish_time,'%Y%m月%d日 %H:%M')
+            elif category == 0:
+                publish_time = info_map["publish_time"]
+                data_source["publish_time"] = datetime.datetime.strptime(publish_time,'%Y-%m-%d %H:%M:%S')
 
             if sqlUtil.insert_data(data_source,self.table_name):
                 print u"插入完毕"
 
+            print info_map
             print data_source["publish_time"]
 
         except Exception,e:
