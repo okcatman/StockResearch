@@ -153,11 +153,11 @@ class CrawlerRuner(object):
                 publish_time = info_map["publish_time"]
                 data_source["publish_time"] = datetime.datetime.strptime(publish_time,'%Y-%m-%d %H:%M:%S')
 
-            # if sqlUtil.insert_data(data_source,self.table_name):
-            #     print u"插入完毕"
+            if sqlUtil.insert_data(data_source,self.table_name):
+                print u"插入完毕"
 
-            print data_source["info"]
-            print data_source["publish_time"]
+            #print data_source["info"]
+            #print data_source["publish_time"]
 
         except Exception,e:
             info = sys.exc_info()
