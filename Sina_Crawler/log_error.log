@@ -766,3 +766,15 @@ Thu, 02 Apr 2015 22:35:28 ERROR ('F:\\soft\\python27\\lib\\site-packages\\reques
 Thu, 02 Apr 2015 22:35:28 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\sessions.py', 'line:', 573, 'in', 'send')
 Thu, 02 Apr 2015 22:35:28 ERROR ('F:\\soft\\python27\\lib\\site-packages\\requests\\adapters.py', 'line:', 415, 'in', 'send')
 Thu, 02 Apr 2015 22:35:28 ERROR ** <class 'requests.exceptions.ConnectionError'>: ('Connection aborted.', error(10060, ''))
+Fri, 03 Apr 2015 00:10:15 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 69, 'in', '__go')
+Fri, 03 Apr 2015 00:10:15 ERROR ** <type 'exceptions.TypeError'>: 'tuple' object does not support item assignment
+Fri, 03 Apr 2015 00:10:15 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 69, 'in', '__go')
+Fri, 03 Apr 2015 00:10:15 ERROR ** <type 'exceptions.TypeError'>: 'tuple' object does not support item assignment
+Fri, 03 Apr 2015 00:11:45 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 69, 'in', '__go')
+Fri, 03 Apr 2015 00:11:45 ERROR ** <type 'exceptions.TypeError'>: 'tuple' object does not support item assignment
+Fri, 03 Apr 2015 00:11:45 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 69, 'in', '__go')
+Fri, 03 Apr 2015 00:11:45 ERROR ** <type 'exceptions.TypeError'>: 'tuple' object does not support item assignment
+Fri, 03 Apr 2015 00:13:51 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 69, 'in', '__go')
+Fri, 03 Apr 2015 00:13:51 ERROR ** <type 'exceptions.TypeError'>: 'tuple' object does not support item assignment
+Fri, 03 Apr 2015 00:13:52 ERROR ('G:/testPython/pyCharmPro/ResearchPro/StockResearch/Sina_Crawler/CrawlerRunner.py', 'line:', 69, 'in', '__go')
+Fri, 03 Apr 2015 00:13:52 ERROR ** <type 'exceptions.TypeError'>: 'tuple' object does not support item assignment

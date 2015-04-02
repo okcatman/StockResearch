@@ -23,7 +23,7 @@ class Fetcher(object):
     rep_tag = [' ', '\t', '\n', '\r', '\f', '\v', '<div', '&nbsp;', '<a', '</a>', '<A', '</A>', '<table', '<TABLE',
                '</TABLE>', '</table>', '<tr', '<td', '</tr>', '<TR', '</TR>', '<TD', '</TD>', '</td>', '<p', '<span',
                '<P', '<SPAN', '<DIV', "&", '<font', '<B', '<b', '<br', '/>', '</div>', '</DIV>', '</p>', '</span>',
-               '</SPAN>','<wbr>', '</font>', '</FONT>', '<strong','</strong>','</B>','</P>','</img>', '<FONT', '>', 'id=','sina_keyword_ad_area2','articalContentnewfont_family','quote_','stock_']
+               '</SPAN>','<wbr>', '</font>', '</FONT>', '<strong','</strong>','<STRONG','</STRONG>','</B>','</P>','</img>', '<FONT', '>', 'id=','sina_keyword_ad_area2','articalContentnewfont_family','quote_','stock_']
 
     regex_tag = {
         re.compile(r"href=['\"]?http://[\s\S]*?>"): "",
@@ -38,8 +38,9 @@ class Fetcher(object):
         re.compile(r"COLOR=['\"]?.+?['\"]?"): "",
         re.compile(r"TITLE=['\"]?.+?['\"]?"): "",
         re.compile(r"<!--[\s\S]+?--"):"",
-        re.compile(r'''wt_article_link"onmouseover="WeiboCard.show([\s\S]+?,'finance',this)'''):"",
+        re.compile(r'''wt_article_link"onmouseover="WeiboCard.show\([\s\S]+?,'finance',this\)'''):"",
         re.compile(r'''"_baidu_bookmark[\s\S]+?"'''):"",
+        re.compile(r'''ALIGN="[\s\S]+?"'''):"",
     }
 
     proxies = {
