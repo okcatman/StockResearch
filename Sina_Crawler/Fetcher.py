@@ -9,6 +9,8 @@ import sys
 from Config import Config
 from LoggingRecord import LogRec
 import traceback
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class Fetcher(object):
 

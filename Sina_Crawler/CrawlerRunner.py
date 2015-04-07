@@ -13,6 +13,9 @@ import traceback
 import time
 import datetime
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 '''
 
 个股点评
@@ -112,6 +115,7 @@ class CrawlerRuner(object):
             while f.task_left():
                 res_map = f.pop()
 
+                #print res_map['info']
                 self.__write_to_db(sqlUtil,res_map,category)
 
                 time.sleep(0.5)
